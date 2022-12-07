@@ -1,0 +1,114 @@
+@use "variables";
+@use "initial";
+@use "nav";
+@use "modal-cart";
+@use "home";
+@use "sale";
+@use "categorias";
+@use "detallePro";
+@use 'descuento';
+@use "ofertas";
+@use "footer";
+@use "firstMobile";
+@use "firstDesktop";
+
+
+
+/* Modelo 3d */
+.background {
+    display: none;
+    background-color: variables.$black-modal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+
+.inactivemodal{
+    display: none;
+}
+.group-name{
+    display: flex;
+    align-items: center;
+}
+
+.btn-ojo{
+    background-color: #FAB602;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.btn-ojo i {
+    margin-top: 3px;
+}
+
+
+.modelvirtual {
+    justify-content: center;
+    margin-top: 10px;
+    // width: 90%;
+    // height: 88%;
+    // margin: 0px 25px;
+    background-color: variables.$model-3d;
+    border-radius: 2rem;
+    z-index: 20;
+    // padding: 100px 0px;
+    overflow: hidden;
+    position: fixed;
+    width: 474px;
+    height: 480px;
+    top: 50%;
+    left: 50%;
+    margin: -229px -237px;
+    /* Negative half of height. */
+    /* Negative half of width. */
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px;
+        background-color: rgba(255, 255, 255, 0);
+        z-index: 30;
+    }
+
+    &__icon-close {
+        font-size: 2rem;
+        color: variables.$icon-negro;
+    }
+}
+
+// MODEL VIEWER
+
+model-viewer {
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/*DETALLLE PRODUCTOS*/
+
+
+/*=============== KEYFRAMES ===============*/
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}

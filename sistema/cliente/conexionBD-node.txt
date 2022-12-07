@@ -1,0 +1,35 @@
+const express = require('express');
+const mysql = require('mysql');
+const port = 3306;
+const app = express();
+
+const conexion = mysql.createConnection({
+    host: 'localhost',
+    database: 'ventasgrill',
+    user: 'admin',
+    password:'123456'
+});
+
+conexion.connect(function(error){
+    if(error){
+        return console.log('error de conexion', error.stack);
+    }
+    console.log("Conectado", conexion.threadId);
+});
+    app.get("/", (req, res)=>{
+        ("Hola Mundo")
+    });
+    app.get("/usuarios", (req, res)=>{
+        let sql = "SELECT * FROM USUARIO";
+        conexion.query(sql, function(error, results, fields){
+            if(error){
+                throw error;
+            }
+            console.log("Conectado", conexion.threadId);
+            for(var i in results)
+            {
+                console.log('Nombre ${results[i].nombre} email $results[i].email');
+            }
+            console.log("conectado", conexion.threadId);
+        });
+    });

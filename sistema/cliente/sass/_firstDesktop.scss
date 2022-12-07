@@ -1,0 +1,158 @@
+@use 'variables';
+
+/*=======DESKTOP FIRST====*/
+//NAV
+@media (max-width: 1000px) {
+    nav{
+        width: 100%;
+        height: 84px;
+    }
+    .navTop{
+        height: 100%;
+
+    }
+    .on-active{
+        display: none;
+    }
+    .inactive{
+        display: block;
+    }
+    .inactiv{
+        display: block;
+    }
+   .ubermenu-sub-indicator{
+        display: none !important;
+    }
+    .right{
+        display: grid;
+        width: 90%;
+        margin: 0 auto 0 auto;
+        align-items: center;
+        grid-template-columns: max-content auto max-content max-content max-content;
+    }
+    .left{
+        width: 100%;
+    }
+    .img-nav{
+        height: 100%;
+        width: 80%;
+        margin: 25px 0px 0px 15px;
+
+    }
+    .img-nav img{
+        width: 100%;
+        height: 60px;
+    }
+    .cart-shop{
+        padding-left: 30px;
+    }
+    .cart-shop .i{
+        color: white;
+        font-size: 20px;
+    }
+
+    .logo_login i{
+        font-size: 20px;
+    }
+    
+    .navDown{
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-bot{
+        margin: 0;
+        padding: 0; 
+        top: 0;
+        position: fixed;
+        z-index: 3;
+    }
+    .list{
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 24px;
+        position: fixed;
+    }
+    .list_items{
+        padding: 24px;
+    }
+    .arrow{
+        display: grid;
+        grid-template-columns: auto max-content;
+        align-items: center;
+    }
+    .arrow a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .arrow i{
+        font-size: 16px;
+    }
+
+    .list{
+        width: 100%;
+    }
+    .list_items{
+        width: 100%;
+    }
+
+    .fa-greater-than{
+        display: block !important;
+    } 
+
+    .product-detail-close{
+        width: 100%;
+    }
+
+    .product-detail-close img{
+        border-radius: 50%;
+        float: right;
+        width: 25px;
+        display: block;
+        margin-top: -10px;
+    }
+    .product-detail-close img:hover {
+        cursor: pointer;
+        background: #FAB602;
+      }
+
+    .cont_prod {
+        margin-left: 33px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+
+    footer .content .box {
+        width: 50%;
+    }
+
+    .tercero,
+    .cuarto {
+        margin-top: 40px;
+    }
+
+    .tercero {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .list {
+        width: 100%;
+    }
+
+    footer .content .box {
+        width: 100%;
+    }
+
+    .tercero {
+        justify-content: none;
+    }
+}
+

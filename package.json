@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "ajax": "^0.0.4",
+    "apexcharts": "^3.36.3",
+    "bootstrap": "^5.2.2",
+    "datatables-buttons-excel-styles": "^1.2.0",
+    "jquery": "^3.6.1",
+    "jszip": "^3.10.1",
+    "pdfmake": "^0.2.6",
+    "sweetalert2": "^11.6.5"
+  }
+}

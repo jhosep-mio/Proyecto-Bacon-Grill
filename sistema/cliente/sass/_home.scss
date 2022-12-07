@@ -1,0 +1,109 @@
+@use "variables";
+
+/*=============== HOME ===============*/
+
+.home {
+    font-family: variables.$font-Poppins;
+    &__content {
+        row-gap: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    &__group {
+        display: grid;
+        position: relative;
+        padding-top: 2rem;
+    }
+
+    &__img {
+        height: 250px;
+        justify-self: center;
+        animation: floating 2s ease-in-out infinite;
+        margin: 1.5rem 0px;
+    }
+
+    &__indicator {
+        width: 8px;
+        height: 8px;
+        background-color: variables.$title-color;
+        border-radius: 50%;
+        position: absolute;
+        top: 7rem;
+        right: 2rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 48px;
+            background-color: variables.$title-color;
+            top: -3rem;
+            right: 45%;
+        }
+    }
+
+    &__details-img {
+        position: absolute;
+        right: .5rem;
+    }
+
+    &__details-title,
+    &__details-subtitle {
+        display: block;
+        font-size: variables.$small-font-size;
+        text-align: right;
+    }
+
+    &__subtitle {
+        font-size: variables.$h3-font-size;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        font-size: variables.$biggest-font-size;
+        font-weight: variables.$font-black;
+        line-height: 109%;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: variables.$font-semi-bold;
+        margin-bottom: 2rem;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        font-weight: variables.$font-semi-bold;
+        font-size: 1rem;
+    }
+}
+
+/* Swiper Class */
+// .swiper-pagination {
+
+// }
+.swiper-wrapper{
+    // gap: 20px;
+}
+
+.swiper-pagination-bullet{
+    width: 10px !important;
+    height: 10px !important;
+    background: variables.$model-3d !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 .5rem !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 1.5rem !important;
+    height: 5px !important; 
+    border-radius: .5rem !important;
+}

@@ -1,0 +1,44 @@
+@use "variables" as v;
+
+/*=============== CATEGORY ===============*/
+
+.category {
+    font-family: v.$font-Poppins;
+    &__container {
+        padding-bottom: 60px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 2rem;
+    }
+
+    &__data {
+        text-align: center;
+    }
+
+    &__img {
+        width: 120px;
+        margin-bottom: 0.75rem;
+        transition: .3s;
+    }
+
+    &__title {
+        margin-bottom: 0.25rem;
+    }
+
+    &__data:hover &__img {
+        transform: translateY(-.5rem);
+    }
+}
+
+.black_pre{
+    color: red;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.sale_parrilla{
+    padding-bottom: 50px;
+}
+
+.title_categ{
+    padding: 100px 0;
+}

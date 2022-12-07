@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+/*=============== ABOUT ===============*/
+.about {
+    font-family: v.$font-Poppins;
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__data {
+        text-align: center;
+    }
+
+    &__description {
+        margin-bottom: var(--mb-2);
+    }
+
+    &__img {
+        width: 200px;
+        justify-self: center;
+        animation: floating 2s ease-in-out infinite;
+    }
+}

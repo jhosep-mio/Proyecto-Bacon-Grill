@@ -1,0 +1,92 @@
+// NEW
+
+@use 'variables' as v;
+
+.ofertas {
+  font-family: v.$font-Poppins;
+
+  &__container {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  &__img {
+    width: 120px !important;
+    height: 100px;
+    margin-bottom: .5rem;
+    margin: 40px 0px;
+    transition: .3s;
+  }
+
+  &__content {
+    position: relative;
+    background: v.$container-color;
+    width: 242px !important;
+    height: 350px !important;
+    padding: 2rem 0 1.5rem 0;
+    border-radius: .75rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  &__tag {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    background-color: v.$first-color;
+    color: v.$title-color;
+    font-size: v.$small-font-size;
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+  }
+
+  &__title {
+    font-size: v.$normal-font-size;
+    font-weight: v.$font-medium;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: v.$small-font-size;
+    margin-bottom: .5rem;
+  }
+
+  &__prices {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+  }
+
+  &__price {
+    font-weight: v.$font-medium;
+    color: v.$title-color;
+  }
+
+  &__discount {
+    color: v.$first-color;
+    font-size: v.$smaller-font-size;
+    text-decoration: line-through;
+    font-weight: v.$font-medium;
+  }
+
+  &__button {
+    display: inline-flex;
+    padding: .5rem;
+    border-radius: .25rem .25rem .75rem .25rem;
+    position: absolute;
+    bottom: 0;
+    right: -3rem;
+  }
+
+  &__icon {
+    font-size: 1.25rem;
+  }
+
+  &__content:hover &__img {
+    transform: translateY(-.5rem);
+  }
+
+  &__content:hover &__button {
+    right: 0;
+  }
+}

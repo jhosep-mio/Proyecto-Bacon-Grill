@@ -1,0 +1,94 @@
+@use "variables";
+
+/*=============== SALES ===============*/
+
+.sale {
+    font-family: variables.$font-Poppins;
+    padding: 50px 8px 0px 8px;
+
+    &__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    &__content {
+        position: relative;
+        background: variables.$container-color;
+        border-radius: 1rem;
+        padding: 1.5rem 0 1.9rem 0;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 90px;
+        height: 90px;
+        transition: .3s;
+    }
+
+    &__subtitle {
+        font-size: variables.$smaller-font-size;
+        margin-bottom: 0.5rem;
+    }
+
+    &__subtitle,
+    &__price {
+        display: block;
+    }
+
+    &__title,
+    &__price {
+        color: variables.$title-color;
+        font-weight: 600;
+        font-size: variables.$normal-font-size;
+    }
+
+    /*Boton Agregar al carrito */
+
+    &__button {
+        display: inline-flex;
+        padding: .4rem;
+        border-radius: .25rem;
+        position: absolute;
+        right: -5rem;
+        bottom: 0;
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+        color: variables.$title-color;
+    }
+
+    /*Boton Ver Modelo 3D */
+    &__button-show {
+        background-color: variables.$second-color;
+        display: inline-flex;
+        padding: .4rem;
+        border-radius: .25rem;
+        position: absolute;
+        left: -5rem;
+        top: 0;
+    }
+
+    &__button-show:hover {
+        background-color: variables.$second-color-alt;
+    }
+
+    &__icon-show {
+        font-size: 1.25rem;
+        color: variables.$title-color;
+    }
+
+    &__content:hover &__img {
+        transform: translateY(-.5rem);
+    }
+
+    &__content:hover &__button {
+        right: 0;
+    }
+
+    &__content:hover &__button-show {
+        left: 0;
+    }
+}

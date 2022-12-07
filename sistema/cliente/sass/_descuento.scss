@@ -1,0 +1,27 @@
+// ========= NEW ==============
+@use 'variables' as v;
+
+/*=============== DISCOUNT ===============*/
+.discount{
+    font-family: v.$font-Poppins;
+    &__container{
+    background: v.$container-color;
+    border-radius: 1rem;
+    padding: 2.5rem 0 1.5rem;
+    row-gap: .75rem;
+  }
+  &__data{
+    text-align: center;
+  }
+  
+  &__title{
+    font-size: v.$h2-font-size;
+    margin-bottom: 2rem;
+  }
+  
+  &__img{
+    width: 200px;
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
+}
